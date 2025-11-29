@@ -13,12 +13,10 @@
   --font-sans: Rubik, sans-serif;
 
   --text-p1-mobile: 30px;
-  --text-p2-mobile-med: 15px;
-  --text-p2-mobile-reg: 15px;
-  --text-p2-mobile-light: 15px;
+  --text-p2-mobile: 15px;
   --text-p3-mobile: 12px;
   --text-p4-mobile: 10px;
-  --text-p1: 10px;
+  --text-p1: 48px;
   --text-p2: 32px;
   --text-p3: 20px;
   --text-p4: 18px;
@@ -48,7 +46,7 @@
     line-height: 135%;
   }
   h3 {
-    font-size: var(--font-size-install-card);
+    font-size: var(--text-install-card);
     line-height: 200%;
     font-weight: var(--font-weight-medium);
     color: var(--color-blue-950);
@@ -61,8 +59,8 @@
   }
   p,
   li {
-    font-size: var(--text-p2-mobile-reg);
-    font-weight: var(--font-weight-normal);
+    font-size: var(--text-p2-mobile);
+    font-weight: 400;
     line-height: 165%;
 
     color: var(--color-blue-950-50);
@@ -76,18 +74,37 @@
   details summary::marker {
     display: none;
   }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: var(--text-p1);
+    }
+    h2 {
+      font-size: var(--text-p2);
+    }
+    h3 {
+      font-size: var(--text-p3);
+    }
+    h4 {
+      font-size: var(--text-p4);
+    }
+    p,
+    li {
+      font-size: var(--text-p4);
+    }
+  }
 }
 @layer components {
   .btn-primary {
-    @apply w-full h-12 flex items-center justify-center py-3.5 px-2.5 font-medium text-p2-mobile-med text-white rounded-md;
+    @apply w-full h-12 flex items-center justify-center py-3.5 px-2.5 font-medium text-p2-mobile text-white rounded-md;
   }
 
   .features-element {
-    @apply border-b border-list-border h-full flex items-center justify-center text-blue-950-75;
+    @apply border-b border-list-border h-full flex items-center justify-center text-blue-950-75 md:border-none md:items-start;
   }
 
   .install-card {
-    @apply flex flex-col items-center w-full gap-8 p-8 rounded-[15px] shadow-xl;
+    @apply flex flex-col items-center w-full gap-8 p-8 rounded-[15px] shadow-xl md:p-6 md:gap-4;
     box-shadow: 0px 10px 20px -5px var(--color-list-border);
   }
 
@@ -95,6 +112,6 @@
     @apply border-t border-solid border-[var(--color-list-border)];
   }
   .details-container summary {
-    @apply flex items-center justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile-light;
+    @apply flex items-center justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile md:text-p4;
   }
 }

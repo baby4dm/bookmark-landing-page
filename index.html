@@ -19,7 +19,7 @@
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body class="font-sans">
-    <header class="py-16 px-[8.5%] md:px-[10%]">
+    <header class="py-16 px-[8.5%] md:px-[10.4%]">
       <div class="h-6 flex justify-between items-center">
         <img class="h-100%" src="./images/logo-bookmark.svg" alt="Bookmark" />
         <button class="h-100%" aria-label="Open menu">
@@ -37,18 +37,18 @@
             <img
               src="/images/illustration-hero.svg"
               alt="Feature"
-              class="relative z-10 w-full h-auto"
+              class="relative z-10 w-full h-auto px-[3.5%] md:px-[7.4%]"
             />
           </div>
 
-          <div class="flex flex-col gap-6 px-8 text-center">
-            <h1 class="md:text-p1">A Simple Bookmark Manager</h1>
+          <div class="flex flex-col gap-6 px-[8.5%] md:px-[10.4%] text-center items-center">
+            <h1>A Simple Bookmark Manager</h1>
             <p>
               A clean and simple interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try it
               for free.
             </p>
-            <div class="flex items-center justify-center gap-4">
+            <div class="flex items-center justify-center gap-4 w-full max-w-[343px]">
               <button class="btn-primary bg-blue-600">Get it on Chrome</button>
               <button class="btn-primary bg-grey-50 text-blue-950">
                 Get it on Firefox
@@ -59,8 +59,12 @@
       </section>
       <section>
         <div class="flex flex-col gap-8 justify-center">
-          <div class="flex flex-col gap-8 justify-center px-8">
-            <div class="flex flex-col gap-4 justify-center text-center">
+          <div
+            class="flex flex-col gap-8 justify-center px-[8.5%] md:px-[10.4%] md:gap-18"
+          >
+            <div
+              class="flex flex-col gap-4 justify-center text-center md:gap-6"
+            >
               <h2>Features</h2>
               <p>
                 Our aim is to make it quick and easy for you to access your
@@ -68,10 +72,14 @@
                 you can access them on the go.
               </p>
             </div>
-            <div>
-              <ul class="flex flex-col justify-center text-center h-[179px]">
+            <div
+              class="md:border-b md:border-solid md:border-[var(--color-list-border)]"
+            >
+              <ul
+                class="flex flex-col justify-center text-center h-[179px] md:flex-row md:justify-evenly md:h-[46px]"
+              >
                 <li
-                  class="features-element border-t border-solid border-[var(--color-list-border)]"
+                  class="features-element border-t border-solid border-[var(--color-list-border)] md:border-none"
                 >
                   Simple Bookmarking
                 </li>
@@ -80,40 +88,47 @@
               </ul>
             </div>
           </div>
-          <div class="relative flex flex-col pt-8 gap-8">
-            <div class="bg-blue-600 h-[203px] mr-16 rounded-r-[316.5px]"></div>
-            <div class="h-[201px] w-full px-8 absolute top-0">
+          <div class="relative flex flex-col pt-8 gap-8 md:gap-16">
+            <div class="relative flex justify-center pb-10 md:pb-16 lg:pb-24">
+              <div
+                class="absolute left-0 bottom-0 w-3/4 h-3/4 bg-blue-600 rounded-r-[316.5px] z-0"
+              ></div>
               <img
                 src="./images/illustration-features-tab-1.svg"
                 alt="Feature"
-                img
+                class="relative z-10 w-full h-auto px-[8.5%] md:px-[10.4%]"
               />
             </div>
-            <div class="flex flex-col gap-4 px-8 text-center items-center">
+
+            <div
+              class="flex flex-col gap-4 px-[8.5%] md:px-[10.4%] text-center items-center md:gap-6"
+            >
               <h2>Bookmark in one click</h2>
               <p>
                 Organize your bookmarks however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.
               </p>
-              <button class="btn-primary bg-blue-600 w-[40%]">More Info</button>
+              <button class="btn-primary bg-blue-600 w-full max-w-[114px]">More Info</button>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="px-8 flex flex-col gap-10">
-          <div class="flex flex-col gap-4 items-center text-center">
+        <div class="px-[8.5%] md:px-[10.4%] flex flex-col gap-10 md:gap-16">
+          <div class="flex flex-col gap-4 items-center text-center md:gap-6">
             <h2>Download the extension</h2>
             <p>
               We’ve got more browsers in the pipeline. Please do let us know if
               you’ve got a favourite you’d like us to prioritize.
             </p>
           </div>
-          <div class="flex flex-col items-center text-center gap-10">
+          <div
+            class="flex flex-col items-center text-center gap-10 md:flex-row md:gap-2"
+          >
             <div class="install-card">
               <img src="./images/logo-chrome.svg" alt="Chrome" />
-              <div class="flex flex-col gap-2">
+              <div class="flex flex-col gap-2 md:gap-0">
                 <h3>Add to Chrome</h3>
                 <p>Minimum version 62</p>
               </div>
@@ -124,7 +139,7 @@
             </div>
             <div class="install-card">
               <img src="./images/logo-firefox.svg" alt="Firefox" />
-              <div class="flex flex-col gap-2">
+              <div class="flex flex-col gap-2 md:gap-0">
                 <h3>Add to Firefox</h3>
                 <p>Minimum version 55</p>
               </div>
@@ -135,7 +150,7 @@
             </div>
             <div class="install-card">
               <img src="./images/logo-opera.svg" alt="Opera" />
-              <div class="flex flex-col gap-2">
+              <div class="flex flex-col gap-2 md:gap-0">
                 <h3>Add to Opera</h3>
                 <p>Minimum version 46</p>
               </div>
@@ -148,7 +163,9 @@
         </div>
       </section>
       <section>
-        <div class="flex flex-col gap-14 px-8 items-center text-center">
+        <div
+          class="flex flex-col gap-14 px-[8.5%] md:px-[10.4%] items-center text-center"
+        >
           <div class="flex flex-col gap-4">
             <h2>Frequently Asked Questions</h2>
             <p>
@@ -234,30 +251,36 @@
               </p>
             </details>
           </div>
-          <button class="btn-primary bg-blue-600 w-[40%]">More Info</button>
+          <button class="btn-primary bg-blue-600 w-[40%] max-w-[114px]">More Info</button>
         </div>
       </section>
       <section class="bg-blue-600">
-        <div class="py-12 px-8 flex flex-col gap-8 items-center text-center">
-          <div>
+        <div
+          class="py-12 px-[8.5%] md:px-0 flex flex-col gap-8 items-center text-center md:py-14 md:w-full md:max-w-[442px] md:mx-auto"
+        >
+          <div class="md:flex md:flex-col md:gap-6 w-full">
             <h4>35,000+ ALREADY JOINED</h4>
             <h2 class="text-white">Stay up-to-date with what we’re doing</h2>
           </div>
 
-          <form class="flex flex-col gap-4 w-full">
+          <form class="flex flex-col gap-4 w-full md:flex-row">
             <input
-              class="bg-white w-full h-12 p-4 rounded-[5px]"
+              class="bg-white w-full h-12 p-4 rounded-[5px] md:flex-300"
               type="email"
               placeholder="Enter your email address"
             />
-            <button class="btn-primary bg-red-400">Contact Us</button>
+            <button class="btn-primary bg-red-400 md:flex-126">
+              Contact Us
+            </button>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="bg-blue-950">
-      <div class="flex flex-col gap-12 items-center py-8">
+      <div
+        class="flex flex-col gap-12 items-center py-8 md:flex-row md:gap-0 md:justify-between px-[8.5%] md:px-[10.4%]"
+      >
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <path
@@ -275,13 +298,13 @@
           </g>
         </svg>
         <nav>
-          <ul class="flex flex-col gap-6 text-center">
+          <ul class="flex flex-col gap-6 text-center md:flex-row">
             <li class="text-white">FEATURES</li>
             <li class="text-white">PRICING</li>
             <li class="text-white">CONTACT</li>
           </ul>
         </nav>
-        <div class="flex gap-10">
+        <div class="flex gap-10 md:gap-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path
               fill="#FFF"

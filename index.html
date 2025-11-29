@@ -19,18 +19,28 @@
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
   <body class="font-sans">
-    <header class="py-16 px-[8.5%] md:px-[10.4%]">
+    <header class="py-16 px-[8.5%] md:px-[10.4%] lg:px-[11.67%]">
       <div class="h-6 flex justify-between items-center">
         <img class="h-100%" src="./images/logo-bookmark.svg" alt="Bookmark" />
-        <button class="h-100%" aria-label="Open menu">
+        <button class="h-100% lg:hidden" aria-label="Open menu">
           <img src="./images/icon-hamburger.svg" alt="" />
         </button>
+        <nav class="hidden lg:flex lg:flex-row lg:gap-12 lg:items-center">
+          <ul class="lg:flex lg:flex-row lg:gap-12">
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+          </ul>
+          <button class="btn-primary bg-red-400 w-[111px]">LOGIN</button>
+        </nav>
       </div>
     </header>
     <main class="flex flex-col gap-24">
       <section>
-        <div class="flex flex-col gap-12 md:gap-18 lg:flex-row-reverse">
-          <div class="relative flex justify-center">
+        <div
+          class="flex flex-col gap-12 md:gap-18 xl:flex-row-reverse xl:gap-0 xl:items-center"
+        >
+          <div class="relative flex justify-center xl:flex-735">
             <div
               class="absolute right-0 bottom-0 w-3/4 h-3/4 bg-blue-600 rounded-l-[316.5px] z-0"
             ></div>
@@ -41,14 +51,18 @@
             />
           </div>
 
-          <div class="flex flex-col gap-6 px-[8.5%] md:px-[10.4%] text-center items-center">
+          <div
+            class="flex flex-col gap-6 px-[8.5%] md:px-[10.4%] text-center items-center md:w-full md:max-w-[calc(540px+10.4%*2)] md:self-center xl:flex-540"
+          >
             <h1>A Simple Bookmark Manager</h1>
             <p>
               A clean and simple interface to organize your favourite websites.
               Open a new browser tab and see your sites load instantly. Try it
               for free.
             </p>
-            <div class="flex items-center justify-center gap-4 w-full max-w-[343px]">
+            <div
+              class="flex items-center justify-center gap-4 w-full max-w-[343px]"
+            >
               <button class="btn-primary bg-blue-600">Get it on Chrome</button>
               <button class="btn-primary bg-grey-50 text-blue-950">
                 Get it on Firefox
@@ -60,10 +74,10 @@
       <section>
         <div class="flex flex-col gap-8 justify-center">
           <div
-            class="flex flex-col gap-8 justify-center px-[8.5%] md:px-[10.4%] md:gap-18"
+            class="flex flex-col gap-8 justify-center px-[8.5%] md:px-[10.4%] md:gap-18 md:items-center"
           >
             <div
-              class="flex flex-col gap-4 justify-center text-center md:gap-6"
+              class="flex flex-col gap-4 justify-center text-center md:gap-6 md:w-full md:max-w-[540px] md:items-center"
             >
               <h2>Features</h2>
               <p>
@@ -73,10 +87,10 @@
               </p>
             </div>
             <div
-              class="md:border-b md:border-solid md:border-[var(--color-list-border)]"
+              class="md:border-b md:border-solid md:border-[var(--color-list-border)] md:w-full md:max-w-[540px] md:self-center"
             >
               <ul
-                class="flex flex-col justify-center text-center h-[179px] md:flex-row md:justify-evenly md:h-[46px]"
+                class="flex flex-col justify-center text-center h-[179px] md:flex-row md:justify-evenly md:h-[46px] md:w-full"
               >
                 <li
                   class="features-element border-t border-solid border-[var(--color-list-border)] md:border-none"
@@ -88,20 +102,24 @@
               </ul>
             </div>
           </div>
-          <div class="relative flex flex-col pt-8 gap-8 md:gap-16">
-            <div class="relative flex justify-center pb-10 md:pb-16 lg:pb-24">
+          <div
+            class="relative flex flex-col pt-8 gap-8 md:gap-16 xl:flex-row xl:gap-30 xl:justify-start xl:items-center"
+          >
+            <div
+              class="relative flex justify-center pb-10 md:pb-16 lg:pb-24 xl:flex-705"
+            >
               <div
                 class="absolute left-0 bottom-0 w-3/4 h-3/4 bg-blue-600 rounded-r-[316.5px] z-0"
               ></div>
               <img
                 src="./images/illustration-features-tab-1.svg"
                 alt="Feature"
-                class="relative z-10 w-full h-auto px-[8.5%] md:px-[10.4%]"
+                class="relative z-10 w-full h-auto px-[8.5%] md:px-[10.4%] xl:pr-0"
               />
             </div>
 
             <div
-              class="flex flex-col gap-4 px-[8.5%] md:px-[10.4%] text-center items-center md:gap-6"
+              class="flex flex-col gap-4 px-[8.5%] md:px-[10.4%] text-center items-center md:gap-6 xl:flex-450 xl:pl-0"
             >
               <h2>Bookmark in one click</h2>
               <p>
@@ -109,14 +127,20 @@
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite sites.
               </p>
-              <button class="btn-primary bg-blue-600 w-full max-w-[114px]">More Info</button>
+              <button class="btn-primary bg-blue-600 w-full max-w-[114px]">
+                More Info
+              </button>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="px-[8.5%] md:px-[10.4%] flex flex-col gap-10 md:gap-16">
-          <div class="flex flex-col gap-4 items-center text-center md:gap-6">
+        <div
+          class="px-[8.5%] md:px-[10.4%] flex flex-col gap-10 md:gap-16 items-center"
+        >
+          <div
+            class="flex flex-col gap-4 items-center text-center md:gap-6 md:max-w-[calc(540px+10.4%*2)]"
+          >
             <h2>Download the extension</h2>
             <p>
               We’ve got more browsers in the pipeline. Please do let us know if
@@ -124,7 +148,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-center text-center gap-10 md:flex-row md:gap-2"
+            class="flex flex-col items-center text-center gap-10 md:flex-row md:gap-2 lg:gap-8"
           >
             <div class="install-card">
               <img src="./images/logo-chrome.svg" alt="Chrome" />
@@ -137,7 +161,7 @@
                 Add & Install Extension
               </button>
             </div>
-            <div class="install-card">
+            <div class="install-card lg:mt-20">
               <img src="./images/logo-firefox.svg" alt="Firefox" />
               <div class="flex flex-col gap-2 md:gap-0">
                 <h3>Add to Firefox</h3>
@@ -148,7 +172,7 @@
                 Add & Install Extension
               </button>
             </div>
-            <div class="install-card">
+            <div class="install-card lg:mt-40">
               <img src="./images/logo-opera.svg" alt="Opera" />
               <div class="flex flex-col gap-2 md:gap-0">
                 <h3>Add to Opera</h3>
@@ -164,9 +188,9 @@
       </section>
       <section>
         <div
-          class="flex flex-col gap-14 px-[8.5%] md:px-[10.4%] items-center text-center"
+          class="flex flex-col gap-14 px-[8.5%] md:px-[10.4%] items-center text-center md:max-w-[calc(540px+10.4%*2)] mx-auto"
         >
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 w-full">
             <h2>Frequently Asked Questions</h2>
             <p>
               Here are some of our FAQs. If you have any other questions you’d
@@ -251,7 +275,9 @@
               </p>
             </details>
           </div>
-          <button class="btn-primary bg-blue-600 w-[40%] max-w-[114px]">More Info</button>
+          <button class="btn-primary bg-blue-600 w-[40%] max-w-[114px]">
+            More Info
+          </button>
         </div>
       </section>
       <section class="bg-blue-600">
@@ -279,7 +305,7 @@
 
     <footer class="bg-blue-950">
       <div
-        class="flex flex-col gap-12 items-center py-8 md:flex-row md:gap-0 md:justify-between px-[8.5%] md:px-[10.4%]"
+        class="flex flex-col gap-12 items-center py-8 md:flex-row md:gap-0 md:justify-between px-[8.5%] md:px-[10.4%] lg:px-[11.67%]"
       >
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">

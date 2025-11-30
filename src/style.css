@@ -117,8 +117,21 @@
   .details-container {
     @apply border-t border-solid border-[var(--color-list-border)];
   }
+
   .details-container summary {
     @apply flex items-center justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile md:text-p4 hover:text-red-400;
+  }
+
+  .details-container summary svg {
+    @apply transition-transform duration-300 stroke-[#5267DF];
+  }
+
+  .details-container[open] summary svg {
+    @apply rotate-180 stroke-red-400;
+  }
+
+  .details-container[open] summary {
+    @apply text-red-400;
   }
   .features-element.active {
     @apply text-blue-950;
@@ -150,5 +163,43 @@
   .description-img {
     @apply transition-opacity duration-250 ease-in-out;
     opacity: 1;
+  }
+  .input-invalid {
+    @apply border-solid border-[2px] border-[#FA5959];
+  }
+
+  .error-message {
+    @apply bg-[#FA5959] text-white text-xs px-2 py-1.5 italic text-start;
+
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .input-invalid-bottom-fix {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input-success-border {
+    @apply border-2 border-green-500;
+  }
+
+  .success-message {
+    @apply bg-green-500 text-white text-xs px-2 py-1.5 italic;
+
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .input-success-border {
+    @apply border-2 border-green-500;
   }
 }

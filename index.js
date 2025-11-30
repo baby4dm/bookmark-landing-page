@@ -19,7 +19,6 @@ const tabData = [
   },
 ];
 
-
 const tabElements = document.querySelectorAll(".features-element");
 const contentImage = document.querySelector(".description-img");
 const contentTitle = document.querySelector(".title");
@@ -70,4 +69,76 @@ closeBtn.addEventListener("click", () => {
   mobileNav.classList.remove("open");
   menuToggle.classList.remove("hidden");
   document.body.style.overflow = "";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const emailInput = document.getElementById("emailInput");
+  const errorIcon = document.getElementById("errorIcon");
+  const errorMessage = document.getElementById("errorMessage");
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const SUCCESS_CLASS = "input-success-border";
+  const ERROR_CLASS = "input-invalid";
+  const ERROR_BOTTOM_FIX_CLASS = "input-invalid-bottom-fix";
+  const SUCCESS_MESSAGE_TEXT = "Thank you! We'll be in touch.";
+  const ERROR_MESSAGE_TEXT = "Whoops, make sure it's an email";
+
+  const resetStyles = () => {
+    emailInput.classList.remove(
+      ERROR_CLASS,
+      ERROR_BOTTOM_FIX_CLASS,
+      SUCCESS_CLASS
+    );
+    errorIcon.classList.add("hidden");
+    errorMessage.classList.add("hidden");
+    errorMessage.textContent = ERROR_MESSAGE_TEXT;
+  };
+
+  const validateAndToggleError = (input) => {
+    const value = input.value.trim();
+    const isEmailValid = emailRegex.test(value);
+    const isEmpty = value === "";
+    resetStyles();
+
+    if (isEmpty || !isEmailValid) {
+      input.classList.add(ERROR_CLASS, ERROR_BOTTOM_FIX_CLASS);
+      errorIcon.classList.remove("hidden");
+      errorMessage.classList.remove("hidden");
+      errorMessage.textContent = ERROR_MESSAGE_TEXT;
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const isValid = validateAndToggleError(emailInput);
+
+    if (isValid) {
+      resetStyles();
+      emailInput.classList.add(SUCCESS_CLASS);
+
+      errorMessage.classList.add("success-message");
+      errorMessage.classList.remove("hidden");
+      errorMessage.textContent = SUCCESS_MESSAGE_TEXT;
+
+      setTimeout(() => {
+        emailInput.value = "";
+        resetStyles();
+      }, 3000);
+
+      return;
+    }
+
+  });
+
+  emailInput.addEventListener("input", () => {
+    validateAndToggleError(emailInput);
+  });
+
+  resetStyles();
 });

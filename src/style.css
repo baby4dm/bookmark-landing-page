@@ -8,7 +8,9 @@
   --color-red-400: #fa5959;
   --color-blue-950-50: rgba(36, 42, 69, 0.5);
   --color-blue-950-75: rgba(36, 42, 69, 0.75);
+  --color-blue-950-95: rgba(36, 42, 69, 0.95);
   --color-list-border: rgba(73, 93, 207, 0.2);
+  --color-white-15: rgba(255, 255, 255, 0.15);
 
   --font-sans: Rubik, sans-serif;
 
@@ -67,6 +69,7 @@
   }
   li {
     color: var(--color-blue-950);
+    cursor: pointer;
   }
   details summary::-webkit-details-marker {
     display: none;
@@ -96,11 +99,12 @@
 }
 @layer components {
   .btn-primary {
-    @apply w-full h-12 flex items-center justify-center py-3.5 px-2.5 font-medium text-p2-mobile text-white rounded-md;
+    @apply w-full h-12 flex items-center justify-center py-3.5 px-2.5 font-medium text-p2-mobile text-white rounded-md cursor-pointer;
   }
 
   .features-element {
-    @apply border-b border-list-border h-full flex items-center justify-center text-blue-950-75 md:border-none md:items-start;
+    /* 🔴 ДОДАНО: relative для позиціонування лінії */
+    @apply relative border-b border-list-border h-full flex items-center justify-center text-blue-950-75 md:border-none md:items-start;
   }
 
   .install-card {
@@ -113,5 +117,36 @@
   }
   .details-container summary {
     @apply flex items-center justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile md:text-p4;
+  }
+  .features-element.active {
+    @apply text-blue-950;
+  }
+
+  .features-element.active::after {
+    content: "";
+
+    @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 
+      w-40 h-1 bg-red-400;
+  }
+  .mobile-nav {
+    @apply opacity-0 pointer-events-none invisible
+    transition-opacity duration-300 ease-out
+    absolute top-0 left-0 w-full h-full py-16 px-[8.5%] z-50 bg-blue-950-95 md:px-[10.4%];
+  }
+
+  .mobile-nav.open {
+    @apply opacity-100 pointer-events-auto visible flex flex-col;
+  }
+  .menu-toggle.hidden {
+    @apply hidden;
+  }
+  .nav-item {
+    @apply text-white h-full w-full flex items-center justify-center border-t border-solid border-white-15;
+  }
+  .title,
+  .content,
+  .description-img {
+    @apply transition-opacity duration-250 ease-in-out;
+    opacity: 1;
   }
 }

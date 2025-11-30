@@ -71,6 +71,9 @@
     color: var(--color-blue-950);
     cursor: pointer;
   }
+  li:hover {
+    color: var(--color-red-400);
+  }
   details summary::-webkit-details-marker {
     display: none;
   }
@@ -103,8 +106,7 @@
   }
 
   .features-element {
-    /* 🔴 ДОДАНО: relative для позиціонування лінії */
-    @apply relative border-b border-list-border h-full flex items-center justify-center text-blue-950-75 md:border-none md:items-start;
+    @apply relative border-b border-list-border h-full flex items-center justify-center text-blue-950-75 md:border-none md:items-start hover:text-red-400;
   }
 
   .install-card {
@@ -116,7 +118,7 @@
     @apply border-t border-solid border-[var(--color-list-border)];
   }
   .details-container summary {
-    @apply flex items-center justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile md:text-p4;
+    @apply flex items-center justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile md:text-p4 hover:text-red-400;
   }
   .features-element.active {
     @apply text-blue-950;

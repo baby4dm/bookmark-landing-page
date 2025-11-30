@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/bookmark-landing-page/assets/favicon-32x32-DQjEQYWa.png"
+    />
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <script type="module" crossorigin src="/bookmark-landing-page/assets/index-B5M8vzwV.js"></script>
+    <link rel="stylesheet" crossorigin href="/bookmark-landing-page/assets/index-CC7xow8V.css">
+  </head>
+  <body class="font-sans">
+    <header class="py-16 px-[8.5%] md:px-[10.4%] lg:px-[11.67%]">
+      <div class="h-6 flex justify-between items-center">
+        <img class="h-100%" src="data:image/svg+xml,%3csvg%20width='148'%20height='25'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3cpath%20d='M37%206.299h5.227c.746%200%201.434.155%202.062.466.629.311%201.123.735%201.484%201.27s.542%201.12.542%201.754c0%20.672-.165%201.254-.495%201.746-.33.491-.762.868-1.297%201.129v.15c.697.248%201.25.643%201.661%201.185.41.541.616%201.191.616%201.95%200%20.735-.196%201.385-.588%201.951a3.817%203.817%200%200%201-1.587%201.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04%205.45c.548%200%20.986-.152%201.316-.457.33-.305.495-.688.495-1.148%200-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28%205.619c.61%200%201.086-.159%201.428-.476.342-.317.513-.731.513-1.241%200-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927%202.595c-1.307%200-2.492-.308-3.556-.924a6.711%206.711%200%200%201-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528%200-1.281.305-2.457.915-3.528a6.711%206.711%200%200%201%202.51-2.529C52.756%206.308%2053.94%206%2055.248%206c1.306%200%202.492.308%203.556.924a6.711%206.711%200%200%201%202.51%202.53c.61%201.07.915%202.246.915%203.527%200%201.282-.305%202.458-.915%203.528a6.711%206.711%200%200%201-2.51%202.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52%204.52%200%200%200%202.258-.578%204.177%204.177%200%200%200%201.615-1.624c.392-.697.588-1.494.588-2.39%200-.896-.196-1.692-.588-2.389a4.177%204.177%200%200%200-1.615-1.624%204.52%204.52%200%200%200-2.258-.579%204.47%204.47%200%200%200-2.25.579%204.195%204.195%200%200%200-1.605%201.624c-.392.697-.588%201.493-.588%202.39%200%20.895.196%201.692.588%202.389a4.195%204.195%200%200%200%201.605%201.624%204.47%204.47%200%200%200%202.25.578zm15.353%202.39c-1.307%200-2.492-.308-3.556-.924a6.711%206.711%200%200%201-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528%200-1.281.305-2.457.914-3.528a6.711%206.711%200%200%201%202.511-2.529C68.108%206.308%2069.294%206%2070.6%206c1.307%200%202.492.308%203.556.924a6.711%206.711%200%200%201%202.51%202.53c.61%201.07.915%202.246.915%203.527%200%201.282-.305%202.458-.914%203.528a6.711%206.711%200%200%201-2.511%202.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52%204.52%200%200%200%202.259-.578%204.177%204.177%200%200%200%201.614-1.624c.392-.697.588-1.494.588-2.39%200-.896-.196-1.692-.588-2.389a4.177%204.177%200%200%200-1.614-1.624%204.52%204.52%200%200%200-2.259-.579%204.47%204.47%200%200%200-2.25.579%204.195%204.195%200%200%200-1.605%201.624c-.392.697-.588%201.493-.588%202.39%200%20.895.196%201.692.588%202.389a4.195%204.195%200%200%200%201.606%201.624%204.47%204.47%200%200%200%202.249.578zM79.83%206.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6%2011.973l5.338%207.542v.149h-3.08l-3.994-5.693-1.512%201.773v3.92h-2.52V6.299zM93.779%206h3.248l3.546%209.39h.15L104.268%206h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398%208.81h-1.96l-3.416-8.81h-.149l.15%202.221v6.59h-2.483V6zm20.8%200h2.894l5.021%2013.365h-2.781l-1.12-3.192h-5.115l-1.12%203.192h-2.781L114.579%206zm3.193%207.859l-1.176-3.36-.486-1.606h-.149l-.485%201.606-1.195%203.36h3.49zM124.553%206h4.872c.871%200%201.646.18%202.324.541.678.361%201.204.862%201.577%201.503.374.64.56%201.366.56%202.175%200%20.858-.27%201.62-.812%202.286a4.617%204.617%200%200%201-2.044%201.447l-.018.13%203.584%205.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853%206.03c.573%200%201.04-.175%201.4-.523.361-.349.542-.79.542-1.326%200-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835%205.525%205.34%207.541v.15h-3.08l-3.996-5.694-1.512%201.773v3.92h-2.52V6z'%20fill='%23242A45'%20fill-rule='nonzero'/%3e%3cg%3e%3ccircle%20fill='%235267DF'%20cx='12.5'%20cy='12.5'%20r='12.5'/%3e%3cpath%20d='M9%209v10l3.54-3.44L16.078%2019V9a2%202%200%200%200-2-2H11a2%202%200%200%200-2%202z'%20fill='%23FFF'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Bookmark" />
+        <button class="menu-toggle h-100% lg:hidden" aria-label="Open menu">
+          <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='18'%20height='15'%3e%3cpath%20fill='%23242A45'%20fill-rule='evenodd'%20d='M0%200h18v3H0V0zm0%206h18v3H0V6zm0%206h18v3H0v-3z'/%3e%3c/svg%3e" alt="" />
+        </button>
+        <nav class="hidden lg:flex lg:flex-row lg:gap-12 lg:items-center">
+          <ul class="lg:flex lg:flex-row lg:gap-12">
+            <li>FEATURES</li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+          </ul>
+          <button
+            class="btn-primary bg-red-400 w-[111px] hover:bg-white hover:border-[2px] hover:border-red-400 hover:text-red-400"
+          >
+            LOGIN
+          </button>
+        </nav>
+        <nav class="mobile-nav">
+          <div class="flex h-[25px] items-center justify-between">
+            <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                />
+                <g>
+                  <circle fill="#FFFFFF" cx="12.5" cy="12.5" r="12.5" />
+                  <path
+                    d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+                    fill="#242a45"
+                  />
+                </g>
+              </g>
+            </svg>
+            <svg
+              class="close-btn"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+            >
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"
+              />
+            </svg>
+          </div>
+          <ul class="mt-10 flex flex-col h-[199px] items-center">
+            <li class="nav-item">FEATURES</li>
+            <li class="nav-item">PRICING</li>
+            <li class="nav-item border-b border-solid border-white-15">
+              CONTACT
+            </li>
+          </ul>
+          <button
+            class="btn-primary w-full border border-solid border-white mt-6"
+          >
+            LOGIN
+          </button>
+          <div class="flex gap-10 justify-center mt-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+              />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+              <path
+                fill="#FFF"
+                fill-rule="evenodd"
+                d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+              />
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="flex flex-col gap-24">
+      <section>
+        <div
+          class="flex flex-col gap-12 md:gap-18 xl:flex-row-reverse xl:gap-0 xl:items-center"
+        >
+          <div class="relative flex justify-center xl:flex-735">
+            <div
+              class="absolute right-0 bottom-0 w-3/4 h-3/4 bg-blue-600 rounded-l-[316.5px] z-0"
+            ></div>
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='657'%20height='466'%3e%3cdefs%3e%3cfilter%20id='a'%20width='118%25'%20height='126.9%25'%20x='-9%25'%20y='-5.7%25'%20filterUnits='objectBoundingBox'%3e%3cfeOffset%20dy='2'%20in='SourceAlpha'%20result='shadowOffsetOuter1'/%3e%3cfeGaussianBlur%20in='shadowOffsetOuter1'%20result='shadowBlurOuter1'%20stdDeviation='2'/%3e%3cfeColorMatrix%20in='shadowBlurOuter1'%20result='shadowMatrixOuter1'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200'/%3e%3cfeMerge%3e%3cfeMergeNode%20in='shadowMatrixOuter1'/%3e%3cfeMergeNode%20in='SourceGraphic'/%3e%3c/feMerge%3e%3c/filter%3e%3crect%20id='c'%20width='578'%20height='385'%20rx='26'/%3e%3cfilter%20id='b'%20width='126%25'%20height='139%25'%20x='-13%25'%20y='-11.7%25'%20filterUnits='objectBoundingBox'%3e%3cfeOffset%20dy='30'%20in='SourceAlpha'%20result='shadowOffsetOuter1'/%3e%3cfeGaussianBlur%20in='shadowOffsetOuter1'%20result='shadowBlurOuter1'%20stdDeviation='20'/%3e%3cfeColorMatrix%20in='shadowBlurOuter1'%20values='0%200%200%200%200.18243335%200%200%200%200%200.230632694%200%200%200%200%200.506057518%200%200%200%200.200120192%200'/%3e%3c/filter%3e%3clinearGradient%20id='d'%20x1='99.013%25'%20x2='2.544%25'%20y1='71.675%25'%20y2='29.014%25'%3e%3cstop%20offset='0%25'%20stop-color='%23151515'/%3e%3cstop%20offset='100%25'%20stop-color='%233D3D3D'/%3e%3c/linearGradient%3e%3crect%20id='e'%20width='536'%20height='346'%20y='3'%20rx='8'/%3e%3c/defs%3e%3cg%20fill='none'%20fill-rule='evenodd'%20filter='url(%23a)'%20transform='translate(39%209)'%3e%3cg%20transform='translate(.5%20.5)'%3e%3cg%20fill-rule='nonzero'%3e%3cuse%20fill='%23000'%20filter='url(%23b)'%20xlink:href='%23c'/%3e%3cuse%20fill='%23777'%20xlink:href='%23c'/%3e%3c/g%3e%3crect%20width='574.23'%20height='381.865'%20x='2'%20y='2'%20fill='url(%23d)'%20fill-rule='nonzero'%20rx='25'/%3e%3cg%20transform='translate(21.03%2016.303)'%3e%3crect%20width='471.463'%20height='353.756'%20x='33'%20fill='%232A2A2A'%20fill-rule='nonzero'%20opacity='.1'%20rx='5'/%3e%3cmask%20id='f'%20fill='%23fff'%3e%3cuse%20xlink:href='%23e'/%3e%3c/mask%3e%3cuse%20fill='%23E8EAF6'%20fill-rule='nonzero'%20xlink:href='%23e'/%3e%3cg%20mask='url(%23f)'%3e%3cpath%20fill='%235267DF'%20d='M-3.53%203.197h547v59h-547z'/%3e%3cg%20transform='translate(22.47%2017.197)'%20fill='%23FFF'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20opacity='.245'/%3e%3ccircle%20cx='477'%20cy='16'%20r='16'%20opacity='.104'/%3e%3cg%20transform='translate(47%206)'%3e%3crect%20width='120'%20height='6'%20opacity='.75'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20y='14'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3cg%20mask='url(%23f)'%3e%3cg%20transform='translate(57%2096)'%3e%3crect%20width='261'%20height='316'%20fill='%23FFF'%20rx='8'/%3e%3crect%20width='128'%20height='316'%20x='295'%20fill='%23FFF'%20rx='8'/%3e%3crect%20width='120'%20height='6'%20x='78.47'%20y='38.197'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3cg%20transform='translate(110%20135)'%3e%3ccircle%20cx='16'%20cy='26'%20r='16'%20fill='%23F98E5D'/%3e%3crect%20width='88'%20height='6'%20x='284'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='40'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='60'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='94'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='114'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='134'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='30'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3cg%20transform='translate(110%20201)'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%236AC6D6'/%3e%3crect%20width='120'%20height='6'%20x='47'%20y='6'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3cg%20transform='translate(110%20257)'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%23A47ED4'/%3e%3crect%20width='120'%20height='6'%20x='47'%20y='6'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3cg%20transform='translate(110%20313)'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%23EC7878'/%3e%3crect%20width='120'%20height='6'%20x='47'%20y='6'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
+              alt="Feature"
+              class="relative z-10 w-full h-auto px-[3.5%] md:px-[7.4%]"
+            />
+          </div>
+
+          <div
+            class="flex flex-col gap-6 px-[8.5%] md:px-[10.4%] text-center items-center md:w-full md:max-w-[calc(540px+10.4%*2)] md:self-center xl:flex-540 xl:items-start xl:text-start"
+          >
+            <h1>A Simple Bookmark Manager</h1>
+            <p>
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div
+              class="flex items-center justify-center gap-4 w-full max-w-[343px]"
+            >
+              <button
+                class="btn-primary bg-blue-600 hover:bg-white hover:border-[2px] hover:border-blue-600 hover:text-blue-600"
+              >
+                Get it on Chrome
+              </button>
+              <button
+                class="btn-primary bg-grey-50 text-blue-950 hover:bg-white hover:border-[2px] hover:border-blue-950 hover:text-blue-950"
+              >
+                Get it on Firefox
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-col gap-8 justify-center">
+          <div
+            class="flex flex-col gap-8 justify-center px-[8.5%] md:px-[10.4%] md:gap-18 md:items-center"
+          >
+            <div
+              class="flex flex-col gap-4 justify-center text-center md:gap-6 md:w-full md:max-w-[540px] md:items-center"
+            >
+              <h2>Features</h2>
+              <p>
+                Our aim is to make it quick and easy for you to access your
+                favourite websites. Your bookmarks sync between your devices so
+                you can access them on the go.
+              </p>
+            </div>
+            <div
+              class="md:border-b md:border-solid md:border-[var(--color-list-border)] md:w-full md:max-w-[540px] md:self-center"
+            >
+              <ul
+                class="flex flex-col justify-center text-center h-[179px] md:flex-row md:justify-evenly md:h-[46px] md:w-full"
+              >
+                <li
+                  class="features-element active border-t border-solid border-[var(--color-list-border)] md:border-none"
+                >
+                  Simple Bookmarking
+                </li>
+                <li class="features-element">Speedy Searching</li>
+                <li class="features-element">Easy Sharing</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col pt-8 gap-8 md:gap-16 xl:flex-row xl:gap-30 xl:justify-start xl:items-center"
+          >
+            <div
+              class="relative flex justify-center pb-10 md:pb-16 lg:pb-24 xl:flex-705"
+            >
+              <div
+                class="absolute left-0 bottom-0 w-3/4 h-3/4 bg-blue-600 rounded-r-[316.5px] z-0"
+              ></div>
+              <img
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='536'%20height='346'%3e%3cdefs%3e%3crect%20id='a'%20width='536'%20height='346'%20rx='8'/%3e%3c/defs%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3cmask%20id='b'%20fill='%23fff'%3e%3cuse%20xlink:href='%23a'/%3e%3c/mask%3e%3cuse%20fill='%23E8EAF6'%20fill-rule='nonzero'%20xlink:href='%23a'/%3e%3cg%20mask='url(%23b)'%3e%3cpath%20fill='%23242A45'%20d='M-3.53.197h547v59h-547z'/%3e%3cg%20transform='translate(22.47%2014.197)'%20fill='%23FFF'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20opacity='.245'/%3e%3ccircle%20cx='477'%20cy='16'%20r='16'%20opacity='.104'/%3e%3cg%20transform='translate(47%206)'%3e%3crect%20width='120'%20height='6'%20opacity='.75'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20y='14'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3cg%20mask='url(%23b)'%3e%3cg%20transform='translate(57%2093)'%3e%3crect%20width='261'%20height='316'%20fill='%23FFF'%20rx='8'/%3e%3crect%20width='128'%20height='316'%20x='295'%20fill='%23FFF'%20rx='8'/%3e%3crect%20width='120'%20height='6'%20x='78.47'%20y='38.197'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3c/g%3e%3c/g%3e%3cg%20transform='translate(88.47%20115.197)'%3e%3ccircle%20cx='16'%20cy='26'%20r='16'%20fill='%23F98E5D'/%3e%3crect%20width='88'%20height='6'%20x='284'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='40'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='60'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='94'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='114'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='88'%20height='6'%20x='284'%20y='134'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='30'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3cg%20transform='translate(88.47%20181.197)'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%236AC6D6'/%3e%3crect%20width='120'%20height='6'%20x='47'%20y='6'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3cg%20transform='translate(88.47%20237.197)'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%23A47ED4'/%3e%3crect%20width='120'%20height='6'%20x='47'%20y='6'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3cg%20transform='translate(88.47%20293.197)'%3e%3ccircle%20cx='16'%20cy='16'%20r='16'%20fill='%23EC7878'/%3e%3crect%20width='120'%20height='6'%20x='47'%20y='6'%20fill='%23242A45'%20opacity='.5'%20rx='3'/%3e%3crect%20width='64'%20height='6'%20x='47'%20y='20'%20fill='%23242A45'%20opacity='.25'%20rx='3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e"
+                alt="Feature"
+                class="description-img relative z-10 w-full h-auto px-[8.5%] md:px-[10.4%] xl:pr-0"
+              />
+            </div>
+
+            <div
+              class="flex flex-col gap-4 px-[8.5%] md:px-[10.4%] text-center items-center md:gap-6 xl:flex-450 xl:pl-0 xl:items-start xl:text-start"
+            >
+              <h2 class="title">Bookmark in one click</h2>
+              <p class="content">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                class="btn-primary bg-blue-600 w-full max-w-[114px] hover:bg-white hover:border-[2px] hover:border-blue-600 hover:text-blue-600"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="px-[8.5%] md:px-[10.4%] flex flex-col gap-10 md:gap-16 items-center"
+        >
+          <div
+            class="flex flex-col gap-4 items-center text-center md:gap-6 md:max-w-[calc(540px+10.4%*2)]"
+          >
+            <h2>Download the extension</h2>
+            <p>
+              We’ve got more browsers in the pipeline. Please do let us know if
+              you’ve got a favourite you’d like us to prioritize.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center text-center gap-10 md:flex-row md:gap-2 lg:gap-8"
+          >
+            <div class="install-card">
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='102'%20height='100'%3e%3cg%20fill='none'%3e%3cpath%20fill='%23E16B5A'%20d='M50.768.01s30.01-1.325%2045.916%2028.249H48.217s-9.154-.296-16.957%2010.594c-2.25%204.561-4.65%209.27-1.95%2018.538-3.9-6.472-20.708-35.164-20.708-35.164S20.457%201.186%2050.768.009z'/%3e%3cpath%20fill='%23FFD464'%20d='M95.122%2075.095S81.284%20101.238%2047.21%2099.952C51.414%2092.82%2071.45%2058.8%2071.45%2058.8s4.837-7.626-.875-19.696c-2.903-4.192-11.7-8.586-21.237-10.928%207.67-.075%2047.25.005%2047.25.005s12.653%2020.59-1.466%2046.915z'/%3e%3cpath%20fill='%2374B340'%20d='M6.628%2075.294s-16.17-24.825%202.004-53.116l24.225%2041.163s4.314%207.92%2017.832%209.104c5.153-.368%2010.514-.682%2017.351-7.607C64.27%2071.387%2047.327%20100%2047.327%20100s-24.51.448-40.7-24.706z'/%3e%3cellipse%20cx='50.646'%20cy='50.406'%20fill='%23FFF'%20rx='23.064'%20ry='22.656'/%3e%3cellipse%20cx='50.638'%20cy='50.406'%20fill='%232995CC'%20rx='18.292'%20ry='17.969'/%3e%3cpath%20fill='%23268CBF'%20d='M50.643%2032.441c-.364%200-.724.014-1.082.034%209.598.55%2017.209%208.369%2017.209%2017.934%200%209.568-7.611%2017.386-17.21%2017.937.36.02.72.034%201.083.034%2010.101%200%2018.292-8.046%2018.292-17.97%200-9.923-8.19-17.969-18.292-17.969z'/%3e%3c/g%3e%3c/svg%3e" alt="Chrome" />
+              <div class="flex flex-col gap-2 md:gap-0">
+                <h3>Add to Chrome</h3>
+                <p>Minimum version 62</p>
+              </div>
+              <div><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='280'%20height='4'%3e%3cpath%20fill='%23495DCF'%20fill-opacity='.2'%20fill-rule='evenodd'%20d='M0%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm280%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-17%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-18%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-17%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm122%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-70%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM88%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM70%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM53%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM35%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM18%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204z'/%3e%3c/svg%3e" alt="" /></div>
+              <button
+                class="btn-primary bg-blue-600 hover:bg-white hover:border-[2px] hover:border-blue-600 hover:text-blue-600"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+            <div class="install-card lg:mt-20">
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='105'%20height='100'%3e%3cpath%20fill='%23FF9800'%20d='M105%2050c0%2028.862-23.513%2050-52.5%2050S0%2076.588%200%2047.726c0-9.043%202.33-17.59%206.392-25a.995.995%200%200%201%20.23-.366C4.338%2018.956%203.334%2010.318%209.128%204.541c0%202.411%201.464%206.548%203.104%209.638%201.326%202.457%202.737%204.228%203.741%204%202.284-.543%2010.27-.543%2011.412%200%201.877-2.405%206.445-9.09%2013.703-9.09-4.062%204.045-15.704%2018.185%204.567%2018.185h4.568L36.52%2036.363s1.556%203%200%204.548c-1.732-1.732-9.128%201.862-9.128%206.815s5.296%2011.363%2015.98%2011.363c10.683%200%207.986-4.548%2013.696-4.548%205.709%200%206.844%204.548%206.844%204.548-7.855%200-13.558%209.09-22.824%209.09%204.567%203.364%207.58%204.547%2013.696%204.547%2015.113%200%2027.392-12.225%2027.392-27.274%200-6.09-2.008-11.683-5.388-16.224a27.414%2027.414%200%200%201%2010.96%2019.498%2040.554%2040.554%200%200%200%201.279-10.089c0-13.683-5.84-31.776-15.98-38.637C87.655%204.358%20105%2018.466%20105%2045.452V50z'/%3e%3c/svg%3e" alt="Firefox" />
+              <div class="flex flex-col gap-2 md:gap-0">
+                <h3>Add to Firefox</h3>
+                <p>Minimum version 55</p>
+              </div>
+              <div><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='280'%20height='4'%3e%3cpath%20fill='%23495DCF'%20fill-opacity='.2'%20fill-rule='evenodd'%20d='M0%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm280%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-17%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-18%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-17%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm122%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-70%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM88%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM70%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM53%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM35%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM18%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204z'/%3e%3c/svg%3e" alt="" /></div>
+              <button
+                class="btn-primary bg-blue-600 hover:bg-white hover:border-[2px] hover:border-blue-600 hover:text-blue-600"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+            <div class="install-card lg:mt-40">
+              <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='96'%20height='100'%3e%3cpath%20fill='%23EB6060'%20fill-rule='evenodd'%20d='M48%20100C21.49%20100%200%2077.614%200%2050S21.49%200%2048%200s48%2022.386%2048%2050-21.49%2050-48%2050zm0-10c13.807%200%2025-17.909%2025-40S61.807%2010%2048%2010%2023%2027.909%2023%2050s11.193%2040%2025%2040z'/%3e%3c/svg%3e" alt="Opera" />
+              <div class="flex flex-col gap-2 md:gap-0">
+                <h3>Add to Opera</h3>
+                <p>Minimum version 46</p>
+              </div>
+              <div><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='280'%20height='4'%3e%3cpath%20fill='%23495DCF'%20fill-opacity='.2'%20fill-rule='evenodd'%20d='M0%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm280%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-17%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-18%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-17%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm122%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-35%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zm-70%200a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM88%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM70%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM53%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM35%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204zM18%204a2%202%200%201%201%200-4%202%202%200%200%201%200%204z'/%3e%3c/svg%3e" alt="" /></div>
+              <button
+                class="btn-primary bg-blue-600 hover:bg-white hover:border-[2px] hover:border-blue-600 hover:text-blue-600"
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="flex flex-col gap-14 px-[8.5%] md:px-[10.4%] items-center text-center md:max-w-[calc(540px+10.4%*2)] mx-auto"
+        >
+          <div class="flex flex-col gap-4 w-full">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+              Here are some of our FAQs. If you have any other questions you’d
+              like answered please feel free to email us.
+            </p>
+          </div>
+          <div class="w-full">
+            <details class="details-container">
+              <summary>
+                <span>What is Bookmark?</span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke-width="3" d="M1 1l8 8 8-8" />
+                </svg>
+              </summary>
+              <p class="pb-4 text-start">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </p>
+            </details>
+            <details class="details-container">
+              <summary>
+                <span>How can I request a new browser?</span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke-width="3" d="M1 1l8 8 8-8" />
+                </svg>
+              </summary>
+              <p class="pb-4 text-start">
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </p>
+            </details>
+            <details class="details-container">
+              <summary>
+                <span>Is there a mobile app?</span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke-width="3" d="M1 1l8 8 8-8" />
+                </svg>
+              </summary>
+              <p class="pb-4 text-start">
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </p>
+            </details>
+            <details class="details-container">
+              <summary>
+                <span>What about other Chromium browsers?</span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke-width="3" d="M1 1l8 8 8-8" />
+                </svg>
+              </summary>
+              <p class="pb-4 text-start">
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </p>
+            </details>
+          </div>
+          <button
+            class="btn-primary bg-blue-600 w-[40%] max-w-[114px] hover:bg-white hover:border-[2px] hover:border-blue-600 hover:text-blue-600"
+          >
+            More Info
+          </button>
+        </div>
+      </section>
+      <section class="bg-blue-600">
+        <div
+          class="py-12 px-[8.5%] md:px-0 flex flex-col gap-8 items-center text-center md:py-14 md:w-full md:max-w-[442px] md:mx-auto"
+        >
+          <div class="md:flex md:flex-col md:gap-6 w-full">
+            <h4>35,000+ ALREADY JOINED</h4>
+            <h2 class="text-white">Stay up-to-date with what we’re doing</h2>
+          </div>
+
+          <form id="contactForm" class="flex flex-col gap-4 w-full md:flex-row">
+            <div class="relative w-full md:flex-300">
+              <input
+                id="emailInput"
+                class="focus:outline-none bg-white w-full h-12 p-4 rounded-[5px] md:flex-300"
+                type="text"
+                placeholder="Enter your email address"
+              />
+
+              <div
+                id="errorIcon"
+                class="absolute inset-y-0 right-0 top-0 h-12 pr-4 flex items-center pointer-events-none hidden"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <g fill="none" fill-rule="evenodd">
+                    <circle fill="#FA5959" cx="10" cy="10" r="10" />
+                    <path
+                      fill="#FFF"
+                      fill-rule="nonzero"
+                      d="M9.259 8.243h1.482v4.908H9.259zM9.259 6.223h1.482V7.7H9.259z"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <div id="errorMessage" class="error-message hidden">
+                Whoops, make sure it's an email
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn-primary bg-red-400 md:flex-126 hover:bg-white hover:border-[2px] hover:border-red-400 hover:text-red-400 md:flex-126"
+            >
+              Contact Us
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-blue-950">
+      <div
+        class="flex flex-col gap-12 items-center py-8 md:flex-row md:gap-0 md:justify-between px-[8.5%] md:px-[10.4%] lg:px-[11.67%]"
+      >
+        <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <path
+              d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+              fill="white"
+              fill-rule="nonzero"
+            />
+            <g>
+              <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
+              <path
+                d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
+                fill="#FFF"
+              />
+            </g>
+          </g>
+        </svg>
+        <nav>
+          <ul class="flex flex-col gap-6 text-center md:flex-row">
+            <li class="text-white hover:text-red-400">FEATURES</li>
+            <li class="text-white hover:text-red-400">PRICING</li>
+            <li class="text-white hover:text-red-400">CONTACT</li>
+          </ul>
+        </nav>
+        <div class="flex gap-10 md:gap-6">
+          <svg
+            class="cursor-pointer fill-white hover:fill-red-400"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+            />
+          </svg>
+          <svg
+            class="cursor-pointer fill-white hover:fill-red-400"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"
+            />
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -119,7 +119,7 @@
   }
 
   .details-container summary {
-    @apply flex items-center justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile md:text-p4 hover:text-red-400;
+    @apply flex items-center text-start justify-between gap-4 py-4 cursor-pointer list-none text-blue-950 text-p2-mobile md:text-p4 hover:text-red-400;
   }
 
   .details-container summary svg {
@@ -129,7 +129,10 @@
   .details-container[open] summary svg {
     @apply rotate-180 stroke-red-400;
   }
-
+  .icon-arrow {
+    width: 18px;
+    height: auto;
+  }
   .details-container[open] summary {
     @apply text-red-400;
   }
@@ -170,14 +173,6 @@
 
   .error-message {
     @apply bg-[#FA5959] text-white text-xs px-2 py-1.5 italic text-start;
-
-    position: absolute;
-    top: 48px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
   }
 
   .input-invalid-bottom-fix {
@@ -190,16 +185,15 @@
 
   .success-message {
     @apply bg-green-500 text-white text-xs px-2 py-1.5 italic;
-
+  }
+  .error-message,
+  .success-message {
     position: absolute;
-    top: 48px;
+    top: 44px;
     left: 0;
     right: 0;
     z-index: 10;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-  }
-  .input-success-border {
-    @apply border-2 border-green-500;
   }
 }

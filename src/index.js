@@ -28,6 +28,7 @@ const contentParagraph = document.querySelector(".content");
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 const closeBtn = document.querySelector(".close-btn");
+const contactBtn = document.querySelector(".contact-btn");
 
 function updateContent(index) {
   contentTitle.style.opacity = "0";
@@ -78,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailInput = document.getElementById("emailInput");
   const errorIcon = document.getElementById("errorIcon");
   const errorMessage = document.getElementById("errorMessage");
+  const screenWidth = window.innerWidth;
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -95,6 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     errorIcon.classList.add("hidden");
     errorMessage.classList.add("hidden");
+    errorMessage.classList.remove("success-message");
+    contactBtn.style.marginTop = "0";
+
     errorMessage.textContent = ERROR_MESSAGE_TEXT;
   };
 
@@ -107,6 +112,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isEmpty || !isEmailValid) {
       input.classList.add(ERROR_CLASS, ERROR_BOTTOM_FIX_CLASS);
       errorIcon.classList.remove("hidden");
+      if (screenWidth < 768) {
+        contactBtn.style.marginTop = "32px";
+      }
       errorMessage.classList.remove("hidden");
       errorMessage.textContent = ERROR_MESSAGE_TEXT;
       return false;
@@ -125,6 +133,10 @@ document.addEventListener("DOMContentLoaded", () => {
       emailInput.classList.add(SUCCESS_CLASS);
 
       errorMessage.classList.add("success-message");
+      if (screenWidth < 768) {
+        contactBtn.style.marginTop = "32px";
+      }
+
       errorMessage.classList.remove("hidden");
       errorMessage.textContent = SUCCESS_MESSAGE_TEXT;
 
